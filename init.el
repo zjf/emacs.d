@@ -2,6 +2,7 @@
 (add-to-list 'load-path "~/.emacs.d/site-lisp")
 
 (require 'init-gui-frames)
+(require 'init-color-theme)
 (require 'init-utils)
 (require 'init-windows)
 (require 'init-uniquify)
@@ -10,6 +11,7 @@
 
 (require 'init-recentf)
 (require 'init-etags)
+(require 'init-cscope)
 (require 'init-ido)
 (require 'init-hippie-expand)
 (require 'init-yasnippet)

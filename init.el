@@ -16,6 +16,7 @@
 (require 'init-hippie-expand)
 (require 'init-yasnippet)
 (require 'init-auto-complete)
+(require 'init-essh)
 
 (require 'init-C)
 (require 'init-R)

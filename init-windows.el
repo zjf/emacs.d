@@ -3,13 +3,17 @@
 ;;----------------------------------------------------------------------------
 (winner-mode 1)
 
-
+;;; window-numbering
+(require 'window-numbering)
+;;; highlight the window number in pink color
+(custom-set-faces '(window-numbering-face ((t (:foreground "DeepPink" :underline "DeepPink" :weight bold)))))
+(window-numbering-mode 1)
 
 ;; Make "C-x o" prompt for a target window when there are more than 2
 ;(require-package 'switch-window)
-(require 'switch-window)
+;; (require 'switch-window)
 
-
+(windmove-default-keybindings 'meta)
 
 ;;----------------------------------------------------------------------------
 ;; When splitting window, show (other-buffer) in the new window

@@ -26,7 +26,16 @@
  show-trailing-whitespace t
  truncate-lines nil
  truncate-partial-width-windows nil
+ x-select-enable-clipboard t
  visible-bell nil)
+
+;; smooth scrolling
+;; http://stackoverflow.com/questions/3631220/fix-to-get-smooth-scrolling-in-emacs
+(setq redisplay-dont-pause t
+      scroll-margin 1
+      scroll-step 1
+      scroll-conservatively 10000
+      scroll-preserve-screen-position 1)
 
 (transient-mark-mode t)
 (global-set-key (kbd "RET") 'newline-and-indent)

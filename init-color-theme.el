@@ -7,6 +7,6 @@
 
 (add-to-list 'load-path "~/.emacs.d/site-lisp/emacs-color-theme-solarized-master")
 (require 'color-theme-solarized)
-(color-theme-solarized-light)
+(color-theme-solarized-dark)
 
 (provide 'init-color-theme)

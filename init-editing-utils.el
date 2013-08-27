@@ -40,7 +40,7 @@
 (transient-mark-mode t)
 (global-set-key (kbd "RET") 'newline-and-indent)
 (global-set-key [(meta g)] 'goto-line)
-(tool-bar-mode -1)
+(if (functionp 'tool-bar-mode) (tool-bar-mode 0))
 
 (require 'undo-tree)
 (global-undo-tree-mode)
@@ -63,7 +63,25 @@
 ;; Show matching parens
 ;;----------------------------------------------------------------------------
 (show-paren-mode t)
-(setq show-paren-style 'parentheses)
+(setq show-paren-style 'parenthesis)
+;;(set-face-attribute 'show-paren-match-face nil
+;;        :weight 'bold :underline t :overline nil :slant 'normal)
+;;(require 'rainbow-delimiters)
+(require 'highlight-parentheses)
+(if window-system
+    (setq hl-paren-colors
+          '(;;"#8f8f8f" ; this comes from Zenburn
+            ;; and I guess I'll try to make the far-outer parens look like this
+            "orange1" "yellow1" "greenyellow" "green1"
+            "springgreen1" "cyan1" "slateblue1" "magenta1" "purple"))
+  (setq hl-paren-colors
+        '("red" "orange" "yellow" "green"
+          "blue" "violet" "purple")))
+(define-globalized-minor-mode global-highlight-parentheses-mode
+  highlight-parentheses-mode
+  (lambda ()
+    (highlight-parentheses-mode t)))
+(global-highlight-parentheses-mode t)
 
 ;;----------------------------------------------------------------------------
 ;; Expand region

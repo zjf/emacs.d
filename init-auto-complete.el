@@ -5,7 +5,7 @@
 
 (global-auto-complete-mode t)
 (setq ac-expand-on-auto-complete nil)
-(setq ac-auto-start nil)
+;;(setq ac-auto-start nil)
 (ac-set-trigger-key "TAB")
 (setq ac-trigger-commands
       (cons 'backward-delete-char-untabify ac-trigger-commands))

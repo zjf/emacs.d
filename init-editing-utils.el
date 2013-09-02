@@ -40,6 +40,9 @@
 (transient-mark-mode t)
 (global-set-key (kbd "RET") 'newline-and-indent)
 (global-set-key [(meta g)] 'goto-line)
+(global-set-key [(f2)] 'list-bookmarks)
+(global-set-key [(f3)] 'dired)
+(global-set-key [(f4)] 'speedbar)
 (if (functionp 'tool-bar-mode) (tool-bar-mode 0))
 
 (require 'undo-tree)

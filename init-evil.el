@@ -4,6 +4,7 @@
 
 (loop for (mode . state) in
       '((inferior-ess-mode . emacs)
+        (ess-help-mode . emacs)
         (shell-mode . emacs)
         (term-mode . emacs)
         (undo-tree-virualizer-mode . emacs)

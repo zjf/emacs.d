@@ -20,3 +20,18 @@
 
 (require 'init-C)
 (require 'init-R)
+
+;;;; Important key-bindings
+;;;switch between header file and implementation
+;; C-c o
+;;;code folding in C/C++
+;; C-`
+;;;list bookmarks
+;; F2
+;;;dired
+;; F3
+;;;speedbar
+;; F4
+;;;smart compiling in C/C++
+;; F7
+

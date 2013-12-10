@@ -8,6 +8,8 @@
         (shell-mode . emacs)
         (term-mode . emacs)
         (undo-tree-virualizer-mode . emacs)
+        (compilation-mode . emacs)
+        (gud-mode . emacs)
         )
       do (evil-set-initial-state mode state))
 

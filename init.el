@@ -20,6 +20,7 @@
 
 (require 'init-C)
 (require 'init-R)
+(require 'init-py)
 
 ;;;; Important key-bindings
 ;;;switch between header file and implementation

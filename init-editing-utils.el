@@ -307,4 +307,7 @@ With arg N, insert N newlines."
 (define-key global-map (kbd "C-c r") 'vr/replace)
 (define-key global-map (kbd "C-c q") 'vr/query-replace)
 
+(add-to-list 'load-path "~/.emacs.d/site-lisp/emacs-vim-modeline")
+(require 'vim-modeline)
+(add-to-list 'find-file-hook 'vim-modeline/do)
 (provide 'init-editing-utils)

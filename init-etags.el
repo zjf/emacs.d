@@ -9,6 +9,10 @@
 ;;binding the key
 (global-set-key "\M-?" 'etags-select-find-tag-at-point)
 (global-set-key "\M-." 'etags-select-find-tag)
+(define-key etags-select-mode-map (kbd "RET") 'etags-select-goto-tag)
+(define-key etags-select-mode-map (kbd "M-RET") 'etags-select-goto-tag-other-window)
+(define-key etags-select-mode-map (kbd "SPC") 'scroll-up-command)
+(define-key etags-select-mode-map (kbd "DEL") 'scroll-down-command)
 
 ;;;  Jonas.Jarnestrom<at>ki.ericsson.se A smarter               
 ;;;  find-tag that automagically reruns etags when it cant find a               

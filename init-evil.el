@@ -14,5 +14,6 @@
       do (evil-set-initial-state mode state))
 
 (define-key evil-normal-state-map (kbd "M-.") (kbd "\\ M-."))
+(setq evil-want-fine-undo 'fine)
 
 (provide 'init-evil)
